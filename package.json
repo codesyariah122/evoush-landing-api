@@ -1,0 +1,25 @@
+{
+  "name": "evoush-backend-with-express",
+  "version": "1.0.0",
+  "main": "app.js",
+  "author": "puji",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon --experimental-json-modules app.js"
+  },
+  "dependencies": {
+    "axios": "^0.21.4",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.3",
+    "fs": "^0.0.1-security",
+    "node-fetch": "^3.0.0",
+    "nodemon": "^2.0.12",
+    "path": "^0.12.7",
+    "url": "^0.11.0"
+  },
+  "devDependencies": {}
+}

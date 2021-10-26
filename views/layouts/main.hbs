@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>{{title}}</title>
+	<script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+	{{!-- For sharing tags --}}
+	<link rel="canonical" href="{{og.canonical}}" />
+	<meta name="description" content="{{og.meta_desc}}">
+	<meta name="keywords" content="{{og.meta_key}}">
+	<meta name="keywords" content="HTML, CSS, JavaScript">
+	<meta name="author" content="{{author}}">
+	<meta property="og:title" content="{{og.title}}">
+	<meta property="og:description" content="{{og.desc}}">
+	<meta property="og:image" content="{{og.image}}">
+	<meta property="og:url" content="{{og.url}}">
+	<meta property="og:image:width" content="499" />
+	<meta property="og:image:height" content="500" />
+	{{!-- end sharing tags --}}
+	{{!-- Balada Puji Ermanto @ 2021 --}}
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<link rel="shortcut icon" href="/images/icon/favicon.ico"/>
+	<link href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Poppins:wght@900&family=Quicksand:wght@500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="/css/main.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Heebo:400,700|IBM+Plex+Sans:600" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.1/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.1/css/fontawesome.min.css">
+	<script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+	<script data-ad-client="ca-pub-8390872078103831" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<script src="https://unpkg.com/kaboom@next/dist/kaboom.js"></script>
+	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-609818ffd946e881"></script>
+	<script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=61606506ea6eca00151d8ce7&product=inline-reaction-buttons' async='async'></script>
+</head>
+<body>
+	<div class="container mt-5">
+
+		<div id="home">
+			{{> header}}
+
+			<main>
+				{{>hero}}
+
+				{{!-- {{> games}} --}}
+
+				{{{body}}}
+
+
+			</main>
+
+		</div>
+	</div>
+
+	<div id="footer">
+		{{> footer}}
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+	<script type="text/javascript" src="/script/home.js"></script>
+	{{!-- // <script type="text/javascript" src="/script/runner.js"></script> --}}
+</body>
+</html>

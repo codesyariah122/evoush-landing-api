@@ -1,0 +1,32 @@
+{{!-- <pre>
+	\{{products}}
+</pre> --}}
+<hr>
+<div class="row justify-content-center">
+	<div class="col-lg-12 col-xs-12 col-sm-12">
+
+		<div class="row">
+			<div v-if="loading">
+				<center>
+					<small class="text-danger">Loading ... </small> <br>
+					<img src="https://i.gifer.com/PSc.gif" class="img-fluid mt-5" width="500">
+				</center>
+			</div>
+
+			<div v-else v-for="product in products.data.slice().reverse()" class="col-lg-4 mb-3">
+				{{!-- overlay hover --}}
+				<div class="hovereffect">
+					<img class="img-responsive" :src="product.media.source" alt="">
+					<div class="overlay">
+						<h2>\{{product.seo.title}}</h2>
+						<a class="info rounded-pill" :href="`https://evoush.com/product/${product.permalink}`">View Product</a>
+					</div>
+				</div>
+				{{!-- end overlay hover --}}
+
+			</div>
+
+		</div>
+
+	</div>
+</div>

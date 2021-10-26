@@ -1,0 +1,14 @@
+<div class="widget">
+	<span :class="`${temp < 30 ? 'badge bg-success' : 'badge bg-primary'}`">
+		\{{city}} &nbsp; <img :src="`http://openweathermap.org/img/wn/${weathers.icon}@2x.png`" width="35"> \{{weathers.description}} \{{temp}}&#8451;
+	</span>
+
+	{{!-- \{{theme}} --}}
+
+	{{!-- <pre>
+		\{{weathers.icon}}
+	</pre> --}}
+
+</div>
+
+
